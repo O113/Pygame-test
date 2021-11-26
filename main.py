@@ -1,5 +1,4 @@
 import sys
-
 import pygame
 from pygame.locals import *
 
@@ -52,10 +51,10 @@ while True:
         pressed1, pressed2, pressed3 = pygame.mouse.get_pressed()
         # Check if the rect collided with the mouse pos
         # and if the left mouse button was pressed.
-        if Rectplace.collidepoint(pos) and pressed1 and drawOverview == False:
+        if Rectplace.collidepoint(pos) and pressed1 and drawOverview is False:
             drawOverview = True;
 
-        if not Rectplace.collidepoint(pos) and pressed1 and drawOverview == True:
+        if not Rectplace.collidepoint(pos) and pressed1 and drawOverview is True:
             drawOverview = False;
 
             # Draw.
